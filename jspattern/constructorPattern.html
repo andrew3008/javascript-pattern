@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="[add your bin description]">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+var peopleConstructor = function(name,age,city){
+  this.name = name;
+  this.age = age;
+  this.city =city;
+  this.personalInfo = function(){
+      console.log(this.name+','+this.age+','+this.city);
+    
+  };
+};
+var person1 = new peopleConstructor('ranjit',26,'mumbai');
+var person2 = new peopleConstructor('satish',25,'navimumbai');
+
+person1.personalInfo();
+person2.personalInfo();
+</script>
+
+
+
+<script id="jsbin-source-javascript" type="text/javascript">var peopleConstructor = function(name,age,city){
+  this.name = name;
+  this.age = age;
+  this.city =city;
+  this.personalInfo = function(){
+      console.log(this.name+','+this.age+','+this.city);
+    
+  };
+};
+var person1 = new peopleConstructor('ranjit',26,'mumbai');
+var person2 = new peopleConstructor('satish',25,'navimumbai');
+
+person1.personalInfo();
+person2.personalInfo();</script></body>
+</html>
